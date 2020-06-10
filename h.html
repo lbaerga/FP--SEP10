@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style> 
+     body{
+        background-image: url("w2.png")
+      }
+  * {box-sizing: border-box}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  .text{
+    font-family: monospace;
+    font-size: 18px;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.numbertext {
+  color: grey;
+  font-family: 'Tenali Ramakrishna', sans-serif;
+  font-size: 16px;
+  padding: 12px 14px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.f1{
+      font-family: 'Rancho', serif;
+      font-size: 75px;
+    }
+  .f2{
+      font-family: 'Special Elite', cursive;
+      font-size: 20px;
+      color: black;
+    }
+.f3{
+       font-family: 'Tenali Ramakrishna', sans-serif;
+      font-size: 30px;
+    }
+@media screen and (max-width:500px){
+      .f1{font-size: 60px;}
+      .f2{font-size: 20px;}
+      .f3{font-size: 20px;}
+    }
+    @media screen and (min-width:700px){
+      .f1{font-size: 85px;}
+      .f2{font-size: 35px;}
+      .f3{font-size: 45px;}
+    }
+</style>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<ul class= "ps">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="h.html">History </a></li>
+  <li><a href="i.html">Important Figures</a></li>
+  <li><a href="m.html">Some Methods</a></li>
+  <li><a href="am.html">About Website</a></li>
+</ul>
+<h1 class= "alignc f1 font-effect-shadow-multiple"> The History of Forensic</h1>
+<h2 class="f2">Without doubt, the field of forensic science has come a long way.</h2>
+    <div class="slideshow-container">
+      <div class="mySlides fade"> 
+      <div class="numbertext">1 / 8</div><br><br>
+      <div class="f3"><u>287-212 BC:</u> Archimedes was probably first forensic scientist. He figured out that the King’s crown was not made of actual gold.</div>
+     <br>
+      <img src="h1.png" class="center" style=" width: 200px;height: 300px"></img>  
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 8</div><br><br>
+      <div class="f3"> <u>1859 –1930:</u> Arthur Conan Doyle’s fictional story Sherlock Holmes first applied science to crime.</div>
+      <br>
+      <img src="h2.jpg" class="center"  style="width: 310px;height: 200px">
+     </div>
+    <div class="mySlides fade">
+       <div class="numbertext">3 / 8</div><br><br>
+       <div class="f3"><u>1822–1911:</u> Sir Francis Galton discover the uniqueness of fingerprints.</div>
+       <br>
+       <img src="h3.jpg" class="center"  style=" width: 250px;height: 300px">
+    </div>
+    <div class="mySlides fade"> 
+      <div class="numbertext">4 / 8</div><br><br>
+      <div class="f3"><u>1833–1918:</u> William Herschel, a British official in India, used imprints fingers and hands as signatures on documents for people who could not write. Japan also use a thumb or fingerprint for contracts.</div>
+       <br>
+      <img src="h4.jpg" class="center"  style=" width: 250px;height: 300px">
+    </div>
+    <div class="mySlides fade"> 
+      <div class="numbertext">5 / 8</div><br><br>
+      <div class="f3"><u>1890s:</u> The French began to use the Bertillon System where it consisted of a photograph and 11 body measurements that included dimensions of the head, length of arms, legs, feet, hands, and so on. Bertillon claimed that the likelihood of two people having the same measurements for all 11 traits was less than one in 250 million.</div>
+      <br>
+      <img src="h5.jpg" class="center"  style=" width: 250px;height: 300px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 8</div><br><br>
+      <div class="f3"><u>1894:</u> Fingerprints, which were easier to use and more unique (even identical twins have different fingerprints), were added to the Bertillon System.</div>
+      <br>
+       <img src="h6.jpg" class="center"  style="width: 310px;height: 200px">
+    </div>
+    <div class="mySlides fade"> 
+      <div class="numbertext">7 / 8</div><br><br>
+      <div class="f3"><u>1910:</u> Edmond Locard established the first crime analysis laboratory. 10 years later, it was established throughout Europe.</div>
+     <br>
+     <img src="h7.jpg" class="center"  style="width: 310px;height: 200px">
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">8 / 8</div><br><br>
+      <div class="f3"><u>1932:</u> First crime analysis lab of United States opened in Los Angeles.</div>
+      <br>
+     <img src="h8.jpg" class="center"  style="width: 310px;height: 200px">
+    </div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+</div>
+    <script src="script.js"></script>
+ <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+  </body>
+</html>

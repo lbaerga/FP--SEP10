@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+      body{
+        background-image: url("w2.png")
+      }
+      .accordion{
+  background-color:white;
+  color: black;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  outline: none;
+  transition: .4s;
+}
+.accordion:hover{
+  background-color:#bbb;
+}
+.panel{
+  padding:0 18px;
+  Background-color: white;
+  display: none;
+  overflow: hidden;
+}
+.w1{
+      font-family: 'Rancho', serif;
+      font-size: 65px;
+    }
+.w3{
+      font-family: 'Special Elite', cursive;
+      font-size: 20px;
+}  
+.w2{
+      font-family: 'Tenali Ramakrishna', sans-serif;
+      font-size: 20px;
+}
+@media screen and (max-width:500px){
+      .w1{font-size: 55px;}
+      .w2{font-size: 16px;}
+      .w3{font-size: 15px;}
+    }
+    @media screen and (min-width:700px){
+      .w1{font-size: 75px;}
+      .w2{font-size: 30px;}
+      .w3{font-size: 30px;}
+    }
+    </style>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<ul class= "ps">
+   <li><a href="index.html">Home</a></li>
+  <li><a href="h.html">History </a></li>
+  <li><a href="i.html">Important Figures</a></li>
+  <li><a href="m.html">Some Methods</a></li>
+  <li><a href="am.html">About Website</a></li>
+</ul>
+<h1 class= "alignc w1 font-effect-shadow-multiple "> Important Figures </h1> 
+    <h2 class ="w3"> Forensic science is in a <i>continuous state of evolution</i>. Here are three individuals who have had a significant role.</h2>
+     <button class="accordion w3">Dr. Edmond Locard</button>
+     <div class="panel ">
+       <p class="w2">One of the most important and famous people of forensic is <u>Dr. Edmond Locard</u>. His motto: <i>“everything leaves a trace.” </i>He theorized that a person who enters a crime scene leave something or take something.</p>
+       <img src="i1.jpg" class="center"></img>
+     </div>
+     <button class="accordion w3">Cleo Koff</button>
+     <div class="panel ">
+       <p class="w2"> A more modern figure is <u>Clea Koff</u>, who study bones. She made a lot of contributions on many cases to the United Nation International Criminal Tribunal for Rwanda. Her discoveries helped some mysteries to the <i>Rwandan Geneciode</i>. She brought  many guilty parties to justice.</p>
+       <img src="i2.jpg" class="center"></img>
+     </div>
+     <button class="accordion w3"> Frances Glesser Lee</button>
+     <div class="panel ">
+       <p class="w2"> <u>Frances Glesser Lee</u> made one of the most impactful methods - <i>building mini crime scenes</i>. His ability to constructed very explicit crime scene with small details which gave clues to detectives and help many cases.</p>
+       <img src="i3.jpg" class="center"></img>
+     </div>
+   
+    <script src="script.js"></script>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].addEventListener("click", function() {
+   var panel = this.nextElementSibling;
+   if (panel.style.display === "block") {
+     panel.style.display = "none";
+   } else {
+     panel.style.display = "block";
+   }
+ });
+}
+
+    </script>
+  </body>
+</html>
